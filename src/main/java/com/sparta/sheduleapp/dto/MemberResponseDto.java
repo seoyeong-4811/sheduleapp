@@ -5,10 +5,8 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class CommentResponseDto {
+public class MemberResponseDto {
     private Long id;
-    private String comment;
     private String memberName;
-
+    private String email;
 }
-

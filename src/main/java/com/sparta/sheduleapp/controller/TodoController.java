@@ -66,5 +66,14 @@ public class TodoController {
                 .build();
 
     }
+
+    //일정 담당자 배정
+    @PostMapping("/{todoId}/assign/{memberId}")
+    public ResponseEntity<Void> assignMemberToTodo(@PathVariable Long memberId, @PathVariable Long todoId){
+        todoService.assignMember(memberId, todoId);
+        return ResponseEntity
+                .status(HttpStatus.NO_CONTENT)
+                .build();
+    }
 }
 

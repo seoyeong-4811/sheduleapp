@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 public class TodoResponseDto {
     private Long id;
-    private String userName;
+    private String memberName;
     private String title;
     private String description;
     private List<CommentResponseDto> comments;
